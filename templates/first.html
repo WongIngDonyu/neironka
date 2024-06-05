@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Классификация дефектограмм онлайн</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+<body>
+<div class="header">
+    <img src ="/static/pic/1603629.png"/>
+    <div class="title">Классификация дефектограмме онлайн</div>
+</div>
+<div class="button-container">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="file" class="file-input" required="" style="display: none;">
+        <button type="button" class="button" onclick="document.getElementById('fileInput').click()" style="background-color: red; color: white;">ЗАГРУЗИТЬ ДЕФЕКТОГРАММУ</button>
+        <button type="submit" class="button" style="background-color: red; color: white;">ОТПРАВИТЬ</button>
+    </form>
+</div>
+</body>
+</html>

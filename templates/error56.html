@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Классификация дефектограмм онлайн</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles2.css') }}"></head>
+<body>
+<div class="header">
+    <img src ="/static/pic/1603629.png"/>
+    <div class="title">Классификация дефектограмм онлайн</div>
+</div>
+<div class="content">
+    <div class="defect-info">
+        На данной дефектограмме обнаружен дефект: №56
+    </div>
+    <div class="additional-info">
+        Трещины в шейке в зоне сварного стыка из-за нарушений технологии сварки и обработки сварных стыков, приведшие к отказу рельса после пропуска гарантийного тоннажа    </div>
+<div class="button-container">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="file" class="file-input" required="" style="display: none;">
+        <button type="button" class="button" onclick="document.getElementById('fileInput').click()" style="background-color: red; color: white;">ЗАГРУЗИТЬ ДЕФЕКТОГРАММУ</button>
+        <button type="submit" class="button" style="background-color: red; color: white;">ОТПРАВИТЬ</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
